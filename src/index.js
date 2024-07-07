@@ -17,3 +17,4 @@ function header() {
 }
 
 header();
+loadHome();

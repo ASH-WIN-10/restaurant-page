@@ -1,8 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
 :root {
-	--primary-bg-color: #7c2d12;
-	--secondary-bg-color: #fdba74;
+	--primary-color: #7c2d12;
+	--primary-color-lo: rgb(124 45 18 / 50%);
+	--secondary-color: #b45309;
+	--secondary-color-lo: rgb(179 83 9 / 50%);
 }
 
 body {
@@ -12,15 +14,30 @@ body {
 	height: 100vh;
 	background-image: url(./bg-image.jpg);
 	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	gap: 64px;
+}
+
+button {
+	margin: 0;
+	padding: 0;
+	outline: none;
+	border: none;
+	background-color: transparent;
+	font-family: "PT Serif", serif;
+	transition: all 300ms;
+}
+
+button:hover {
+	cursor: pointer;
 }
 
 header {
-	--primary-bg-color-lo: rgb(124, 45, 18, 0.6);
-
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	background-color: var(--primary-bg-color-lo);
+	background-color: var(--primary-color-lo);
 	backdrop-filter: blur(8px);
 	padding: 10px 40px;
 }
@@ -29,6 +46,10 @@ header {
 	display: flex;
 	align-items: center;
 	gap: 12px;
+}
+
+#logo:hover {
+	cursor: default;
 }
 
 #logo > span {
@@ -47,20 +68,69 @@ nav {
 }
 
 nav > button {
-	margin: 0;
-	padding: 0;
-	border: none;
-	outline: none;
 	color: white;
 	background-color: transparent;
 	font-size: 1.25rem;
-	font-family: "PT Serif", serif;
 	padding: 6px 12px;
 	border-radius: 100vw;
 }
 
 nav > button:hover {
-	cursor: pointer;
-	color: var(--secondary-bg-color);
-	background-color: rgb(0, 0, 0, 0.1);
+	/* color: var(--secondary-color); */
+	background-color: var(--secondary-color-lo);
+}
+
+#content {
+	align-self: center;
+	padding: 64px 150px;
+	width: 50%;
+	background-color: var(--primary-color-lo);
+	backdrop-filter: blur(8px);
+	border-radius: 50px;
+	color: white;
+}
+
+#home {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 24px;
+	text-align: center;
+}
+
+#home > div {
+	display: flex;
+	justify-content: space-between;
+	gap: 24px;
+}
+
+#heroText {
+	font-size: 3.5rem;
+	font-weight: 600;
+}
+
+#home img {
+	height: 10em;
+}
+
+span {
+	font-size: 1.5rem;
+}
+
+.primaryBtn {
+	font-size: 1.3rem;
+	color: white;
+	border: 3px solid var(--secondary-color);
+	width: fit-content;
+	padding: 10px 20px;
+	border-radius: 100vw;
+}
+
+.primaryBtn:hover {
+	background-color: var(--secondary-color);
+}
+
+hr {
+	width: 100%;
+	opacity: 0.25;
 }
