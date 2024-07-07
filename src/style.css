@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+:root {
+	--primary-bg-color: #7c2d12;
+	--secondary-bg-color: #fdba74;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "PT Serif", serif;
+	height: 100vh;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: var(--primary-bg-color);
+	padding: 10px 40px;
+}
+
+#logo {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+}
+
+#logo > span {
+	font-size: 1.8rem;
+	font-weight: 600;
+	color: white;
+}
+
+#logo > img {
+	height: 3em;
+}
+
+nav {
+	display: flex;
+	gap: 50px;
+}
+
+nav > button {
+	margin: 0;
+	padding: 0;
+	border: none;
+	outline: none;
+	color: white;
+	background-color: transparent;
+	font-size: 1.25rem;
+	font-family: "PT Serif", serif;
+	padding: 6px 12px;
+	border-radius: 100vw;
+}
+
+nav > button:hover {
+	cursor: pointer;
+	color: var(--secondary-bg-color);
+	background-color: rgb(0, 0, 0, 0.1);
+}
