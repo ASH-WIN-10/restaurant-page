@@ -10,13 +10,18 @@ body {
 	padding: 0;
 	font-family: "PT Serif", serif;
 	height: 100vh;
+	background-image: url(./bg-image.jpg);
+	background-size: cover;
 }
 
 header {
+	--primary-bg-color-lo: rgb(124, 45, 18, 0.6);
+
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	background-color: var(--primary-bg-color);
+	background-color: var(--primary-bg-color-lo);
+	backdrop-filter: blur(8px);
 	padding: 10px 40px;
 }
 
