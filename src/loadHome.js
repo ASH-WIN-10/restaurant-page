@@ -51,4 +51,4 @@ function loadHome() {
 	homePage.append(heroDiv, container1, sectionBreak, container2);
 }
 
-export default loadHome();
+export { loadHome };
