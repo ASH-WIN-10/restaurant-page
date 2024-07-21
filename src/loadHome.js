@@ -1,4 +1,4 @@
-import Coffee from "./coffee.svg";
+import Coffee from "./svg/coffee.svg";
 
 function loadHome() {
 	const navHome = document.querySelector("#navHome");
@@ -39,7 +39,7 @@ function loadHome() {
 	container2.className = "container";
 
 	const text2 = document.createElement("span");
-	text2.textContent = "Or explore your taste in our menu!";
+	text2.textContent = "Or find your taste in our menu!";
 
 	const exploreBtn = document.createElement("button");
 	exploreBtn.textContent = "Explore";

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap");
 
 :root {
   --primary-color: #7c2d12;
@@ -10,7 +10,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "PT Serif", serif;
+  font-family: "Noto Serif", serif;
   height: 100dvh;
   background-image: url(./img/bg-image.jpg);
   background-size: cover;
@@ -164,11 +164,69 @@ hr {
 }
 
 #menuGrid {
+  margin-top: 12px;
+  width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 250px));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 300px));
+  justify-content: center;
+  gap: 48px;
 }
 
 .card {
-  border: 1px solid red;
-  height: 150px;
+  height: 300px;
+  border-radius: 50px;
+  background-color: var(--primary-color-lo);
+  /*backdrop-filter: blur(10px);*/
+  display: flex;
+  flex-direction: column;
+}
+
+.card > * {
+  flex: 1;
+}
+
+.imageDiv {
+  flex-grow: 2;
+  background-size: cover;
+  background-position: center center;
+  border-radius: 50px 50px 0 0;
+  transition: 300ms all;
+}
+
+#imageDiv1 {
+  background-image: url("./img/affogato.png");
+}
+
+#imageDiv2 {
+  background-image: url("./img/black-coffee.jpg");
+}
+
+#imageDiv3 {
+  background-image: url("./img/cappuccino.jpg");
+}
+
+#imageDiv4 {
+  background-image: url("./img/cold-coffee.png");
+}
+
+#imageDiv5 {
+  background-image: url("./img/espresso.jpg");
+}
+
+#imageDiv6 {
+  background-image: url("./img/mocha.png");
+}
+
+.textDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-size: 1.5rem;
+}
+
+.card:hover {
+  > .imageDiv {
+    flex-grow: 2.8;
+    cursor: pointer;
+  }
 }
