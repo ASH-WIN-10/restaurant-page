@@ -34,4 +34,4 @@ navButtons.forEach((button) => {
 });
 
 header();
-loadContact();
+loadHome();
