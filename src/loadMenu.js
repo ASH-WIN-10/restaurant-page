@@ -7,9 +7,9 @@ function loadMenu() {
   menuPage.id = "menu";
   content.appendChild(menuPage);
 
-  const heroText = document.createElement("span");
-  heroText.id = "heroText";
-  heroText.textContent = "Menu";
+  const mainHeading = document.createElement("span");
+  mainHeading.id = "mainHeading";
+  mainHeading.textContent = "Menu";
 
   const menuGrid = document.createElement("div");
   menuGrid.id = "menuGrid";
@@ -52,7 +52,7 @@ function loadMenu() {
     </div>
   `;
 
-  menuPage.append(heroText, menuGrid);
+  menuPage.append(mainHeading, menuGrid);
 }
 
 export { loadMenu };

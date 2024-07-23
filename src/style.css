@@ -108,7 +108,8 @@ main {
 }
 
 #home,
-#menu {
+#menu,
+#contact {
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -122,7 +123,8 @@ main {
   gap: 24px;
 }
 
-#heroText {
+#heroText,
+#mainHeading {
   font-size: 3.5rem;
   font-weight: 600;
 }
@@ -226,4 +228,45 @@ hr {
     flex-grow: 2.8;
     cursor: pointer;
   }
+}
+
+#contact {
+  gap: 48px;
+}
+
+.highlightCard {
+  border: 4px solid var(--secondary-color);
+  border-radius: 50px;
+
+  > :first-child {
+    font-size: 1.9rem;
+    font-weight: 600;
+    background-color: var(--secondary-color);
+    padding-top: 24px;
+    padding-bottom: 0;
+    border-radius: 36px 50px 0 0;
+  }
+
+  > :nth-child(2) {
+    padding: 24px;
+    padding-top: 12px;
+    font-size: 1.4rem;
+
+    span {
+      display: block;
+    }
+  }
+}
+
+.container {
+  margin-top: 24px;
+  display: flex;
+  gap: 48px;
+  align-items: center;
+}
+
+#mainHeading {
+  padding: 6px 32px;
+  border-radius: 100vw;
+  background-color: var(--secondary-color-lo);
 }
